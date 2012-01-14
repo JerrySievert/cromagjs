@@ -1,0 +1,20 @@
+{
+  "author": "Jerry Sievert <code@legitimatesounding.com> (http://legitimatesounding.com/blog/index.html)",
+  "name": "cromag",
+  "description": "Date and Time Without the Monkeys",
+  "version": "0.1.0",
+  "homepage": "https://github.com/JerrySievert/cromagjs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JerrySievert/cromagjs.git"
+  },
+  "main": "cromag.js",
+  "scripts": {
+    "test": "vows --spec"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
