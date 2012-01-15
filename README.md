@@ -1,5 +1,7 @@
 # Cromag - Advanced Date and Time, No Monkeys
 
+[![Build Status](https://secure.travis-ci.org/JerrySievert/cromagjs.png)](http://travis-ci.org/JerrySievert/cromagjs)
+
 ## In a Nutshell
 
 - Drop in replacement for `Date`
