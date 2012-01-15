@@ -26,9 +26,9 @@
     var now = new Cromag();
     console.log(now.toString());
 
-## API
+# API
 
-### Constructor
+## Constructor
 
 Creates a `Cromag` instance which allows you to work with dates and times.
 
@@ -38,24 +38,32 @@ Creates a `Cromag` instance which allows you to work with dates and times.
     new Cromag(year, month, day [, hour, minute, second, millisecond ])
 
 **milliseconds** - `Number` representing the number of milliseconds since `1 January 1970 00:00:00 UTC`
+
 **dateString** - `String` value representing a date
+
 **year** - `Number` representing the year
+
 **month** - `Number` representing the month, `0` for `January` through `11` for `December`
+
 **day** - `Number` representing the day of the month `1-31`
+
 **hour** - `Number` representing the hour of the day `0-23`
+
 **minute** - `Number` representing the minute of the hour `0-59`
+
 **second** - `Number` representing the second of the minute `0-59`
+
 **millisecond** - `Number` representing the millisecond `0-999`
 
-### Static Methods
+## Static Methods
 
-#### now
+### now
 
 Returns the number of `milliseconds` of the current time.  Equivalent to `+new Cromag()` or `new Cromag().valueOf()`
 
     Cromag.now()
 
-#### parse
+### parse
 
 Returns the number of `milliseconds` of the time passed as `dateString`.
 
@@ -63,9 +71,10 @@ Returns the number of `milliseconds` of the time passed as `dateString`.
     Cromag.parse(dateString, format)
 
 **dateString** - `String` value representing a date
+
 **format** - `String` representing a date format
 
-#### UTC
+### UTC
 
 Returns the number of `milliseconds` representing universal time for the parameters provided.  These parameters are the same as the long form of the `constructor`.
 
@@ -76,40 +85,50 @@ Returns the number of `milliseconds` representing universal time for the paramet
     Cromag.UTC(year, month, day, hour, minute, second, millisecond)
 
 **year** - `Number` representing the year
+
 **month** - `Number` representing the month, `0` for `January` through `11` for `December`
+
 **day** - `Number` representing the day of the month `1-31`
+
 **hour** - `Number` representing the hour of the day `0-23`
+
 **minute** - `Number` representing the minute of the hour `0-59`
+
 **second** - `Number` representing the second of the minute `0-59`
+
 **millisecond** - `Number` representing the millisecond `0-999`
 
-#### today
+### today
 
 Returns a new instance of `Cromag` set to `00:00:00` local time of the current day.
 
     Cromag.today()
 
-#### tomorrow
+### tomorrow
 
 Returns a new instance of `Cromag` set to `00:00:00` local time of the next day.
 
     Cromag.tomorrow()
 
-#### yesterday
+### yesterday
 
 Returns a new instance of `Cromag` set to `00:00:00` local time of the previous day.
 
-#### validateDay
+    Cromag.yesterday()
+
+### validateDay
 
 Returns `boolean` as to whether the date passed is valid.
 
     Cromag.validateDay(day, year, month)
 
 **day** - `Number` representing the day of the month, `1-31`
+
 **year** - `Number` representing the year
+
 **month** - `Number` representing the month, `0-11`
 
-#### validateYear
+### validateYear
 
 Returns `boolean` as to whether the year passed is valid
 
@@ -117,7 +136,7 @@ Returns `boolean` as to whether the year passed is valid
 
 **year** - `Number` representing the year
 
-#### validateMonth
+### validateMonth
 
 Returns `boolean` as to whether the month passed is valid
 
@@ -125,7 +144,7 @@ Returns `boolean` as to whether the month passed is valid
 
 **month** - `Number` representing the month, `1-31`
 
-#### validateHour
+### validateHour
 
 Returns `boolean` as to whether the hour passed is valid
 
@@ -133,7 +152,7 @@ Returns `boolean` as to whether the hour passed is valid
 
 **hour** - `Number` representing the hour, `0-23`
 
-#### validateMinute
+### validateMinute
 
 Returns `boolean` as to whether the minute passed is valid
 
@@ -141,7 +160,7 @@ Returns `boolean` as to whether the minute passed is valid
 
 **minute** - `Number` representing the minute, `0-59`
 
-#### validateSecond
+### validateSecond
 
 Returns `boolean` as to whether the second passed is valid
 
@@ -149,7 +168,7 @@ Returns `boolean` as to whether the second passed is valid
 
 **second** - `Number` representing the second, `0-59`
 
-#### validateMillisecond
+### validateMillisecond
 
 Returns `boolean` as to whether the millisecond passed is valid
 
@@ -157,25 +176,27 @@ Returns `boolean` as to whether the millisecond passed is valid
 
 **millisecond** - `Number` representing the millisecond, `0-999`
 
-#### compare
+### compare
 
 Returns `-1` if `date1` is less than `date2`, `0` if they are the same, or `1` if `date1` is more recent than `date2`.
 
     Cromag.compare(date1, date2)
 
 **date1** - `Cromag` first date/time to compare
+
 **date2** - `Cromag` second date/time to compare
 
-#### equals
+### equals
 
 Returns `boolean` as to whether `date1` is equal to `date2`.
 
     Cromag.equals(date1, date2)
 
 **date1** - `Cromag` first date/time to compare
+
 **date2** - `Cromag` second date/time to compare
 
-#### getDayNumberFromName
+### getDayNumberFromName
 
 Returns the `Number` representing the day passed in, `0-7`
 
@@ -183,7 +204,7 @@ Returns the `Number` representing the day passed in, `0-7`
 
 **name** - `String` day as 2 characters, 3 characters, or full day, `su/sun/sunday`
 
-#### getMonthNumberFromName
+### getMonthNumberFromName
 
 Returns the `Number` representing the month passed in, `0-11`
 
@@ -191,7 +212,7 @@ Returns the `Number` representing the month passed in, `0-11`
 
 **name** - `String` day as 3 characters or full month, `jan/january`
 
-#### isLeapYear
+### isLeapYear
 
 Returns `boolean` as to whether the year passed is a leap year
 
@@ -199,7 +220,7 @@ Returns `boolean` as to whether the year passed is a leap year
 
 **year** - `Number` year to check
 
-#### getDaysInMonth
+### getDaysInMonth
 
 Returns the `Number` of days in the month passed, `1-31`
 
@@ -207,45 +228,45 @@ Returns the `Number` of days in the month passed, `1-31`
 
 **monthNumber** - `Number` of the month to check, `0-11`
 
-### Instance Methods
+## Instance Methods
 
-#### getDate
+### getDate
 
 Returns the `Number` day of the month, `1-31`
 
     d.getDate()
 
-#### getDay
+### getDay
 
 Returns the `Number` day of the week, `0-6`
 
     d.getDay()
 
-#### getFullYear
+### getFullYear
 
 Returns the `Number` full year, 4 digits
 
     d.getFullYear()
 
-#### getHours
+### getHours
 
 Returns the `Number` of the hour, `0-23`
 
     d.getHours()
 
-#### getMilliseconds
+### getMilliseconds
 
 Returns the `Number` of the milliseconds, `0-999`
 
     d.getMilliseconds()
 
-#### getMinutes
+### getMinutes
 
 Returns the `Number` of the minutes, `0-59`
 
     d.getMinutes()
 
-#### getMonth
+### getMonth
 
 Returns the `Number` of the month, `0-11`
 
