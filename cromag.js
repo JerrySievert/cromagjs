@@ -1,6 +1,6 @@
 /*
 
-© 2011 by Jerry Sievert
+© 2012 by Jerry Sievert
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@ THE SOFTWARE.
 
 */
 
-(function () {
+(function (context) {
     // constants
     var monthsAbbr = [
         'Jan',
@@ -772,5 +772,9 @@ THE SOFTWARE.
     });
     
     
-    exports = module.exports = Cromag;
-}());
+    if (context.Object !== undefined) {
+        context.Cromag = Cromag;
+    } else {
+        exports = module.exports = Cromag;
+    }
+}(this));
