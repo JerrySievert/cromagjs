@@ -271,3 +271,69 @@ Returns the `Number` of the minutes, `0-59`
 Returns the `Number` of the month, `0-11`
 
     d.getMonth()
+
+### getSeconds
+
+Returns the `Number` of the second, `0-59`
+
+    d.getSeconds()
+
+### getTime
+
+Returns the `Number` value of the milliseconds since the `epoch`, similar to `valueOf()`
+
+    d.getTime()
+
+### getTimezoneOffset
+
+Returns the `Number` of minutes of the time-zone offset for the current locale
+
+    d.getTimezoneOffset()
+
+### getUTCDate
+
+Returns the `Number` day of the month, universal time
+
+    d.getUTCDate()
+
+### getUTCDay
+
+Returns the `Number` day of the week, universal time
+
+    d.getUTCDay()
+
+### getUTCFullYear
+
+Returns the `Number` full year, universal time
+
+    d.getUTCFullYear()
+
+### getUTCHours
+
+Returns the `Number` of the hour, universal time
+
+    d.getUTCHours()
+
+### getUTCMilliseconds
+
+Returns the `Number` of the milliseconds, universal time
+
+    d.getUTCMilliseconds()
+
+### getUTCMinutes
+
+Returns the `Number` of the minutes, universal time
+
+    d.getUTCMinutes()
+
+### getUTCMonth
+
+Returns the `Number` of the month, universal time
+
+    d.getUTCMonth()
+
+### getUTCSeconds
+
+Returns the `Number` of the second, universal time
+
+    d.getUTCSeconds()
