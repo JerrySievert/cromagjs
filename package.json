@@ -16,7 +16,7 @@
     "url": "git://github.com/JerrySievert/cromagjs.git"
   },
   "bugs": {
-      "url": "http://github.com/JerrySievert/node-date-utils/issues"
+      "url": "http://github.com/JerrySievert/cromagjs/issues"
   },
   "directories": {
       "test": "./test"
