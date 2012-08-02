@@ -2,7 +2,7 @@
   "author": "Jerry Sievert <code@legitimatesounding.com> (http://legitimatesounding.com/blog/index.html)",
   "name": "cromag",
   "description": "Date and Time Without the Monkeys",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": ["date", "time", "utils"],
   "homepage": "https://github.com/JerrySievert/cromagjs",
   "contributors": [

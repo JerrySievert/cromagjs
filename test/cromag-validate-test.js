@@ -263,6 +263,11 @@ vows.describe('Cromag Validate').addBatch({
             assert.equal(topic.getMilliseconds(), 500);
             topic.addMilliseconds(-250);
             assert.equal(topic.getMilliseconds(), 250);
+        },
+        'using the add method works': function () {
+            var topic = Cromag.today();
+            topic.add({ milliseconds: 500 });
+            assert.equal(topic.getMilliseconds(), 500);
         }
     },
 
@@ -278,6 +283,11 @@ vows.describe('Cromag Validate').addBatch({
             assert.equal(topic.getSeconds(), 50);
             topic.addSeconds(-25);
             assert.equal(topic.getSeconds(), 25);
+        },
+        'using the add method works': function () {
+            var topic = Cromag.today();
+            topic.add({ seconds: 50 });
+            assert.equal(topic.getSeconds(), 50);
         }
     },
 
@@ -293,6 +303,11 @@ vows.describe('Cromag Validate').addBatch({
             assert.equal(topic.getMinutes(), 50);
             topic.addMinutes(-25);
             assert.equal(topic.getMinutes(), 25);
+        },
+        'using the add method works': function () {
+            var topic = Cromag.today();
+            topic.add({ minutes: 50 });
+            assert.equal(topic.getMinutes(), 50);
         }
     },
 
@@ -308,6 +323,11 @@ vows.describe('Cromag Validate').addBatch({
             assert.equal(topic.getHours(), 5);
             topic.addHours(-2);
             assert.equal(topic.getHours(), 3);
+        },
+        'using the add method works': function () {
+            var topic = Cromag.today();
+            topic.add({ hours: 5 });
+            assert.equal(topic.getHours(), 5);
         }
     },
 
@@ -323,6 +343,11 @@ vows.describe('Cromag Validate').addBatch({
             assert.equal(topic.getDate(), 11);
             topic.addDays(-2);
             assert.equal(topic.getDate(), 9);
+        },
+        'using the add method works': function () {
+            var topic = new Cromag(2011, 0, 10);
+            topic.add({ days: 1 });
+            assert.equal(topic.getDate(), 11);
         }
     },
 
@@ -338,6 +363,11 @@ vows.describe('Cromag Validate').addBatch({
             assert.equal(topic.getDate(), 17);
             topic.addWeeks(-2);
             assert.equal(topic.getDate(), 3);
+        },
+        'using the add method works': function () {
+            var topic = new Cromag(2011, 0, 10);
+            topic.add({ weeks: 1 });
+            assert.equal(topic.getDate(), 17);
         }
     },
 
@@ -353,6 +383,11 @@ vows.describe('Cromag Validate').addBatch({
             assert.equal(topic.getMonth(), 2);
             topic.addMonths(-2);
             assert.equal(topic.getMonth(), 0);
+        },
+        'using the add method works': function () {
+            var topic = new Cromag(2011, 1, 10);
+            topic.add({ months: 1 });
+            assert.equal(topic.getMonth(), 2);
         }
     },
 

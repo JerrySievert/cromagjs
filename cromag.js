@@ -683,6 +683,9 @@ THE SOFTWARE.
         if (obj.days !== undefined) {
             this.setDate(this.getDate() + obj.days);
         }
+        if (obj.weeks !== undefined) {
+            this.setDate(this.getDate() + (obj.weeks * 7));
+        }
         if (obj.months !== undefined) {
             this.setMonth(this.getMonth() + obj.months);
         }
